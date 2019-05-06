@@ -299,6 +299,7 @@ module.exports = {
   dest: `.deploy/${PUBLISH_TARGET_PATH}/`,
   description: 'Version 1.2.x',
   ga: 'UA-123892882-1',
+  plugins: ['@dovyp/vuepress-plugin-clipboard-copy', true],
   head: [
     [
       'meta',
