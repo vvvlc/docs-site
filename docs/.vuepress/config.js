@@ -293,13 +293,14 @@ const pdfLinks = (allPages => {
 })(ALL_PAGES);
 
 module.exports = {
+  plugins: ['@dovyp/vuepress-plugin-clipboard-copy', true],
   title: 'Zowe Docs',
   version: CURRENT_ZOWE_VERSION,
   base: `${ROOT_BASE_URL}/${PUBLISH_TARGET_PATH}/`,
   dest: `.deploy/${PUBLISH_TARGET_PATH}/`,
   description: 'Version 1.2.x',
   ga: 'UA-123892882-1',
-  plugins: ['@dovyp/vuepress-plugin-clipboard-copy', true],
+
   head: [
     [
       'meta',
