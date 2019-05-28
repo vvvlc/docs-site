@@ -17,6 +17,7 @@ its performance and create large log files that consume a large volume of disk s
 <!-- Version 1 -->
 1. Locate the following shell script files in the `<Zowe install directory>/api-mediation/scripts` directory:
 
+<<<<<<< HEAD
     - ```api-mediation-start-catalog.sh```
     - ```api-mediation-start-discovery.sh```
     - ```api-mediation-start-gateway.sh```
@@ -39,19 +40,28 @@ ___
 
 **Follow these steps:**
 <!-- Version 2 -->
+=======
+>>>>>>> ba8a77b674f467c52ee9b98256ab05fc17b2d212
 1. Locate the following shell script files in the `<Zowe install directory>/api-mediation/scripts` directory:
 
     - ```api-mediation-start-catalog.sh```
     - ```api-mediation-start-discovery.sh```
     - ```api-mediation-start-gateway.sh```
 
+<<<<<<< HEAD
 2. Modify a file, which you intend to enable debug mode for.
 
 3. Find the line that contains the `spring.profiles.include` parameter and modify its value to `debug`. For example: 
+=======
+2. Open a file, for which you want to enable the debug mode.
+
+3. Find the line which contains the `spring.profiles.include` parameter and change the value to `debug`: 
+>>>>>>> ba8a77b674f467c52ee9b98256ab05fc17b2d212
     ```
     -Dspring.profiles.include=debug \
     ```
 
+<<<<<<< HEAD
 4. Restart Zowe for the change to take effect. 
 
    You successfully enabled the debug mode.
@@ -67,6 +77,21 @@ ___
 8. Restart Zowe for the change to take effect.
 
     You successfully disabled the debug mode.
+=======
+4. Restart Zowe.
+
+    You have enabled the debug mode.
+
+5. (Optional) Reproduce a bug that causes issues and review debug messages. If you are unable to resolve the issue, contact CA Support.
+
+6. Disable the debug mode. Modify the line which contains the `spring.profiles.include` parameter back to default:
+    ```
+    -Dspring.profiles.include= \
+    ```
+7. Restart Zowe.
+
+    You have disabled the debug mode.
+>>>>>>> ba8a77b674f467c52ee9b98256ab05fc17b2d212
  ___
 ## Change the Log Level of Individual Code Components
 
